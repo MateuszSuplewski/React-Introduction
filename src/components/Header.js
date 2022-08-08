@@ -1,26 +1,24 @@
-import React from 'react';
-import Logo from './Logo';
-import Nav from './Nav';
-
+import React from 'react'
+import Logo from './Logo'
+import Nav from './Nav'
 
 const Header = props => {
-    const {style} = props
-    return (
-        <header style={style}>
-        <Logo/>
-        <Nav/>
+  const { style, items, logo } = props
+  const { url, alt } = logo
+  return (
+        <header style={style.header}>
+        <Logo style={style} url={url} alt ={alt}/>
+        <Nav style={style} items={items}/>
         </header>
-    )
+  )
 }
 
 Header.defaultProps = {
-    style: {
-        display:'flex',
-        height:'100px',
-        width:'100%',
-        backgroundColor: '#c7dcfc'
-    }
+  header: {},
+  logoImg: {},
+  nav: {},
+  ul: {},
+  navItemLink: {}
 }
-
 
 export default Header
