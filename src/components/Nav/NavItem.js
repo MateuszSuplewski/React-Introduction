@@ -9,7 +9,7 @@ const NavItem = (props) => {
   )
 }
 
-Nav.defaultProps = {
+NavItem.defaultProps = {
  text: 'Default text', 
  url: '/'
 }

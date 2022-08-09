@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Header from './components/Header'
-import Footer from './components/Footer'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 import headerData from './stylesData/headerData'
 import footerData from './stylesData/footerData'
-import Content from './components/Content'
+import Content from './components/Content/Content'
 import contentData from './stylesData/ContentData'
 
 const items = [

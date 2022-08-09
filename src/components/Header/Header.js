@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from './Logo'
-import Nav from './Nav'
+import Nav from '../Nav/Nav'
 
 const Header = props => {
   const { style, items, logo } = props
