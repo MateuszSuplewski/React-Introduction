@@ -11,11 +11,17 @@ import Gallery from './components/Content/Gallery'
 import Post from './components/Content/Post'
 import Category from './components/Content/Category'
 
+import PagePost from './components/PageComponents/PagePost'
+import PageCategory from './components/PageComponents/PageCategory'
+import PageGallery from './components/PageComponents/PageGallery'
 
 const {items, logoParams, copyrightsText, posts, post, galleryItems} = dataToInsert
 const {title,body,author,created} = post
 const {postContainer} = contentData
 
+// ### If you want to test /PageComponents/ simply use <PageCategory/> , <PagePost/> or <PageGallery/> inside render,
+// instead of prepared <Header/>,<Content/>,<Footer/> components
+// If you want to customize any of page components feel free to customize data or import your styling in any of page components file
 
 ReactDOM.render(
     <>
