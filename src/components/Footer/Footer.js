@@ -13,12 +13,14 @@ const Footer = (props) => {
 }
 
 Footer.defaultProps = {
-  nav: {},
-  ul: {},
-  navItemLink: {},
-  navItemLi: {},
-  copyrightsSection: {},
-  copyrightsParagraph: {}
+  style: {
+    nav: {},
+    ul: {},
+    navItemLink: {},
+    navItemLi: {},
+    copyrightsSection: {},
+    copyrightsParagraph: {}
+  }
 }
 
 export default Footer

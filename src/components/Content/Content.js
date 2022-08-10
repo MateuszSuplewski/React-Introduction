@@ -1,43 +1,49 @@
 import React from 'react'
+import Category from './Category'
 import ContentLeft from './ContentLeft'
 import ContentMain from './ContentMain'
 import ContentRight from './ContentRight'
-import Post from './Post'
-import Category from './Category'
 import Gallery from './Gallery'
+import Post from './Post'
 
 class Content extends React.Component {
   render () {
     const { contentLeft, contentRight, contentMain, style } = this.props
+    const { contentArticle } = style
     return (
-    <article style={style.contentArticle}>
-      <ContentLeft content={<Post postData={contentLeft} style={style.postContainer}/>}/>
-      <ContentRight content = {<Category posts={contentRight} style={style} />}/>
-      <ContentMain content = {<Gallery galleryItems={contentMain} style={style}/>}/>
+    <article style={contentArticle}>
+      <ContentLeft content={contentLeft}/>
+      <ContentRight content = {contentRight}/>
+      <ContentMain content = {contentMain}/>
     </article>
     )
   }
 }
 
 Content.defaultProps = {
-  contentArticle: {
-    width: '100%',
-    display: 'flex',
-    flexWrap: 'wrap'
+  style: {
+    contentArticle: {
+      width: '100%',
+      display: 'flex',
+      flexWrap: 'wrap'
+    },
+    postContainer: {
+      width: '50%'
+    },
+    categoryContainer: {
+      width: '50%'
+    },
+    categorySinglePostContainer: {
+      width: '100%'
+    },
+    galleryContainer: {
+      display: 'flex',
+      flexWrap: 'wrap'
+    }
   },
-  postContainer: {
-    width: '50%'
-  },
-  categoryContainer: {
-    width: '50%'
-  },
-  categorySinglePostContainer: {
-    width: '100%'
-  },
-  galleryContainer: {
-    display: 'flex',
-    flexWrap: 'wrap'
-  }
+  contentLeft: <Post/>,
+  contentRight: <Category/>,
+  contentMain: <Gallery/>
 }
 
 export default Content

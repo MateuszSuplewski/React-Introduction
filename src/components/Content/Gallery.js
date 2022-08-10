@@ -18,7 +18,10 @@ Gallery.defaultProps = {
   galleryItems: [
     { url: 'https://i.picsum.photos/id/1012/200/300.jpg?hmac=KU5TJQJkcv2lK_5lVNCie4evqxUOfFGp0Qsv2gQZo5k', created: 'Creation date', author: 'Default author' },
     { url: 'https://i.picsum.photos/id/658/200/300.jpg?hmac=K1TI0jSVU6uQZCZkkCMzBiau45UABMHNIqoaB9icB_0', created: 'Creation Date', author: 'Default author' }
-  ]
+  ],
+  style: {
+    galleryContainer: {}
+  }
 }
 
 export default Gallery

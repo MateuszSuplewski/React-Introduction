@@ -14,11 +14,21 @@ const Header = props => {
 }
 
 Header.defaultProps = {
-  header: {},
-  logoImg: {},
-  nav: {},
-  ul: {},
-  navItemLink: {}
+  style: {
+    header: {},
+    logoImg: {},
+    nav: {},
+    ul: {},
+    navItemLink: {}
+  },
+  items: [
+    { section: 'Home', url: '/' },
+    { section: 'About us', url: '/about' }
+  ],
+  logo: {
+    url: 'https://ftsdlskits.com/wp-content/uploads/2018/12/Paris-Saint-Germain-PSG-Logo-512%C3%97512-URL.png',
+    alt: 'Paris Saint Germain PSG Logo'
+  }
 }
 
 export default Header

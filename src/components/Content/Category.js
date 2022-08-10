@@ -28,7 +28,11 @@ Category.defaultProps = {
     author: 'Author data 2',
     created: 'Creation date 2'
   }
-  ]
+  ],
+  style: {
+    categorySinglePostContainer: {},
+    categoryContainer: {}
+  }
 }
 
 export default Category
